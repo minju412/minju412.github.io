@@ -37,7 +37,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Programmers" %}
-                <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
+                <li><a href="/categories/programmers" class="">Programmers ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -53,7 +53,7 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Programmers SQL" %}
-                <li><a href="/categories/programmers-sql" class="">프로그래머스 SQL ({{category[1].size}})</a></li>
+                <li><a href="/categories/programmers-sql" class="">Programmers SQL ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -62,14 +62,21 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Network Security" %}
-                <li><a href="/categories/network-security" class="">네트워크 보안 ({{category[1].size}})</a></li>
+                <li><a href="/categories/network-security" class="">Network Security ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Digital Forensic" %}
-                <li><a href="/categories/digital-forensic" class="">디지털 포렌식 ({{category[1].size}})</a></li>
+                <li><a href="/categories/digital-forensic" class="">Digital Forensic ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Malware" %}
+                <li><a href="/categories/malware" class="">Malignant Code ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
