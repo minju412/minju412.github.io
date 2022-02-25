@@ -68,6 +68,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Digital Forensic" %}
+                <li><a href="/categories/digital-forensic" class="">디지털 포렌식 ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "War Game" %}
                 <li><a href="/categories/wargame" class="">War Game ({{category[1].size}})</a></li>
                 {% endif %}
