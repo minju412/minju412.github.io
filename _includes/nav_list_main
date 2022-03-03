@@ -87,17 +87,15 @@
                 {% endif %}
                 {% endfor %}
             </ul>
-
-             <span class="nav__sub-title">Capstone Design</span>
-            <ul>
+            
+            <span class="nav__sub-title">etc</span>
+             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Capstone Design" %}
                 <li><a href="/categories/capstone" class="">Capstone Design ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
-
-            <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Git" %}
