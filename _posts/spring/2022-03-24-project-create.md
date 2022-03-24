@@ -24,7 +24,7 @@ last_modified_at: 2022-03-24
 아래와 같이 설정<br>
 - Project: Gradle Project<br>
 - Language: Java<br>
-- Spring Boot: 괄호가 붙어있지 않은 가장 최신 버전<br>
+- Spring Boot: 괄호가 붙어있지 않은 가장 최신 버전 (22년3월24일 기준: 2.6.4)<br>
 - Dependencies: Spring Web, Thymeleaf<br>
 
 ## 🌱 intellij에서 오픈
