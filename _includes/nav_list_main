@@ -13,31 +13,18 @@
                         style="font-family:'Cafe24Oneprettynight';">개</style>
         </li>
         <li>
-            <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-            <span class="nav__sub-title">C/C++/C#</span>
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-            <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
-                {% for category in site.categories %}
-                {% if category[0] == "C" %}
-                <li><a href="/categories/c" class="">C ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "C Sharp" %}
-                <li><a href="/categories/csharp" class="">C Sharp ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-
             <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Programmers" %}
-                <li><a href="/categories/programmers" class="">Programmers ({{category[1].size}})</a></li>
+                {% if category[0] == "Python" %}
+                <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Programmers SQL" %}
+                <li><a href="/categories/programmers-sql" class="">Programmers SQL ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -52,42 +39,12 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Programmers SQL" %}
-                <li><a href="/categories/programmers-sql" class="">Programmers SQL ({{category[1].size}})</a></li>
+                {% if category[0] == "MySQL" %}
+                <li><a href="/categories/mysql" class="">MySQL ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
-
-            <span class="nav__sub-title">Security</span>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Network Security" %}
-                <li><a href="/categories/network-security" class="">Network Security ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Digital Forensic" %}
-                <li><a href="/categories/digital-forensic" class="">Digital Forensic ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Malware" %}
-                <li><a href="/categories/malware" class="">Malignant Code ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "War Game" %}
-                <li><a href="/categories/wargame" class="">War Game ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-
+          
             <span class="nav__sub-title">Framework</span>
             <ul>
                 {% for category in site.categories %}
@@ -98,13 +55,6 @@
             </ul>
             
             <span class="nav__sub-title">etc</span>
-             <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Capstone Design" %}
-                <li><a href="/categories/capstone" class="">Capstone Design ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Git" %}

@@ -1,7 +1,7 @@
 ---
-title: "워게임"
+title: "PYTHON"
 layout: archive
-permalink: categories/wargame
+permalink: categories/python
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.['War Game'] %}
+{% assign posts = site.categories.Python %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
