@@ -63,6 +63,13 @@
             <span class="nav__sub-title">Framework</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "NodeJs" %}
+                <li><a href="/categories/nodejs" class="">Node.js ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "Spring" %}
                 <li><a href="/categories/spring" class="">Spring ({{category[1].size}})</a></li>
                 {% endif %}
