@@ -1,7 +1,7 @@
 ---
 title: "프로그래머스 SQL 문제 풀이"
 layout: archive
-permalink: categories/programmers-sql
+permalink: categories/sql
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories['Programmers SQL'] %}
+{% assign posts = site.categories.SQL %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

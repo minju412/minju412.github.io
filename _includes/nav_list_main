@@ -13,7 +13,15 @@
                         style="font-family:'Cafe24Oneprettynight';">개</style>
         </li>
         <li>
-            <span class="nav__sub-title">Coding Test</span>
+            <span class="nav__sub-title">Language</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "JavaScript" %}
+                <li><a href="/categories/javascript" class="">JavaScript ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <span class="nav__sub-title">CodingTest</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Python" %}
@@ -23,8 +31,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Programmers SQL" %}
-                <li><a href="/categories/programmers-sql" class="">Programmers SQL ({{category[1].size}})</a></li>
+                {% if category[0] == "SQL" %}
+                <li><a href="/categories/sql" class="">SQL ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
