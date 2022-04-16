@@ -1,5 +1,5 @@
 ---
-title:  "[JavaScript] Class와 Object의 차이점"
+title:  "[JavaScript] 4. Class와 Object의 차이점"
 
 categories:
   - JavaScript
@@ -156,6 +156,9 @@ console.log(triangle instanceof Object); // 🌟 true
 > [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 자바스크립트 내부에 포함되어있는 오브젝트들은 어떤 것들이 있는지 확인 가능한 유용한 사이트!
+
+# 📁 참고
+[DreamCoding](https://www.youtube.com/watch?v=_DLhUBWsRtw&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=6)
 
 ***
 <br>

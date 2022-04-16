@@ -1,5 +1,5 @@
 ---
-title:  "[JavaScript] 유용한 10가지 배열 함수들"
+title:  "[JavaScript] 7. 유용한 10가지 배열 함수들"
 
 categories:
   - JavaScript
@@ -333,6 +333,9 @@ const result = students.map((std) => std.score)
 .join();
 console.log(result);
 ```
+
+# 📁 참고
+[DreamCoding](https://www.youtube.com/watch?v=3CUjtKJ7PJg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=9)
 
 ***
 <br>

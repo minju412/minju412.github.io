@@ -1,5 +1,5 @@
 ---
-title:  "[JavaScript] async와 await"
+title:  "[JavaScript] 11. async와 await"
 
 categories:
   - JavaScript
@@ -207,7 +207,8 @@ async function loginResult() {
  
  loginResult();
 ```
-
+# 📁 참고
+[DreamCoding](https://www.youtube.com/watch?v=aoQSOZfz3vQ&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=13)
 
 ***
 <br>

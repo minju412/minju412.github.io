@@ -1,5 +1,5 @@
 ---
-title:  "[JavaScript] Arrow Function"
+title:  "[JavaScript] 3. Arrow Function"
 
 categories:
   - JavaScript
@@ -189,6 +189,10 @@ hello();
   console.log('hi');
 })();
 ```
+
+# 📁 참고
+[DreamCoding](https://www.youtube.com/watch?v=e_lU39U-5bQ&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=5)
+
 
 ***
 <br>
