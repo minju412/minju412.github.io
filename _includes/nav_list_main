@@ -128,6 +128,24 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+
+            <span class="nav__sub-title">dev book review</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "CleanCode" %}
+                <li><a href="/categories/cleancode" class="">Clean Code ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            <span class="nav__sub-title">daily</span>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "AboutMe" %}
+                <li><a href="/categories/aboutme" class="">About Me ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
         </li>
     </ul>
 </nav>
