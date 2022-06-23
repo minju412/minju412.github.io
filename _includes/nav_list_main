@@ -66,6 +66,55 @@
                 {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec2" %}
+                <li><a href="/categories/sec2" class="">Implementation ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec3" %}
+                <li><a href="/categories/sec3" class="">Search ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec4" %}
+                <li><a href="/categories/sec4" class="">Binary Search & Greedy ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec5" %}
+                <li><a href="/categories/sec5" class="">Stack & Queue ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec6" %}
+                <li><a href="/categories/sec6" class="">Exhaustive Search & DFS ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec7" %}
+                <li><a href="/categories/sec7" class="">DFS & BFS  ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Sec8" %}
+                <li><a href="/categories/sec8" class="">Dynamic Programming ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
             <span class="nav__sub-title">DB</span>
             <ul>
                 {% for category in site.categories %}
