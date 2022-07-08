@@ -206,6 +206,13 @@
             <span class="nav__sub-title">daily</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Devlog" %}
+                <li><a href="/categories/devlog" class="">Devlog ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "AboutMe" %}
                 <li><a href="/categories/aboutme" class="">About Me ({{category[1].size}})</a></li>
                 {% endif %}
