@@ -33,7 +33,14 @@
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Spring" %}
-                <li><a href="/categories/spring" class="">Spring ({{category[1].size}})</a></li>
+                <li><a href="/categories/spring" class="">Spring Boot ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "SpringSecurity" %}
+                <li><a href="/categories/springsecurity" class="">Spring Security ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
