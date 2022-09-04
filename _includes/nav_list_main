@@ -131,15 +131,22 @@
             <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "Git" %}
-                <li><a href="/categories/git" class="">Git & Github ({{category[1].size}})</a></li>
+                {% if category[0] == "CodingTest" %}
+                <li><a href="/categories/codingtest" class="">Coding Test ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "CodingTest" %}
-                <li><a href="/categories/codingtest" class="">Coding Test ({{category[1].size}})</a></li>
+                {% if category[0] == "ITNews" %}
+                <li><a href="/categories/itnews" class="">IT News ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "Git" %}
+                <li><a href="/categories/git" class="">Git & Github ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
@@ -150,8 +157,6 @@
                 {% endif %}
                 {% endfor %}
             </ul>
-
-            <span class="nav__sub-title">daily</span>
             <ul>
                 {% for category in site.categories %}
                 {% if category[0] == "Devlog" %}
