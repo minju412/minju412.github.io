@@ -55,6 +55,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "SpringCloud" %}
+                <li><a href="/categories/springcloud" class="">Spring Cloud ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "SpringBatch" %}
                 <li><a href="/categories/springbatch" class="">Spring Batch ({{category[1].size}})</a></li>
                 {% endif %}
