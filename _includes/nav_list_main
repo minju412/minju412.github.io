@@ -115,6 +115,13 @@
             <span class="nav__sub-title">devops</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "GCP" %}
+                <li><a href="/categories/gcp" class="">GCP ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "EC2" %}
                 <li><a href="/categories/ec2" class="">EC2 ({{category[1].size}})</a></li>
                 {% endif %}
