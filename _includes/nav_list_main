@@ -76,6 +76,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "JPA" %}
+                <li><a href="/categories/jpa" class="">JPA ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "NodeJs" %}
                 <li><a href="/categories/nodejs" class="">Node.js ({{category[1].size}})</a></li>
                 {% endif %}
