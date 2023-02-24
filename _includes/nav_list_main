@@ -152,6 +152,13 @@
             <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Devlog" %}
+                <li><a href="/categories/devlog" class="">Devlog ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "CodingTest" %}
                 <li><a href="/categories/codingtest" class="">Coding Test ({{category[1].size}})</a></li>
                 {% endif %}
@@ -175,13 +182,6 @@
                 {% for category in site.categories %}
                 {% if category[0] == "TroubleShooting" %}
                 <li><a href="/categories/troubleshooting" class="">Trouble Shooting ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                {% if category[0] == "Devlog" %}
-                <li><a href="/categories/devlog" class="">Devlog ({{category[1].size}})</a></li>
                 {% endif %}
                 {% endfor %}
             </ul>
