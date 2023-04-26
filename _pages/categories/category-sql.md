@@ -1,5 +1,5 @@
 ---
-title: "프로그래머스 SQL 문제 풀이"
+title: "SQL"
 layout: archive
 permalink: categories/sql
 author_profile: true
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.SQL %}
+{% assign posts = site.categories.Sql %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

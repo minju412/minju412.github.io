@@ -94,6 +94,13 @@
             <span class="nav__sub-title">DB</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "Sql" %}
+                <li><a href="/categories/sql" class="">Sql ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "Oracle" %}
                 <li><a href="/categories/oracle" class="">Oracle ({{category[1].size}})</a></li>
                 {% endif %}
