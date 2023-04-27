@@ -1,0 +1,89 @@
+---
+title:  "[김태원 알고리즘] 단어 찾기 (해쉬) "
+# excerpt: "sprintf에 대해 알아보자"
+
+categories:
+  - CodingTest
+tags:
+  - [CodingTest]
+
+toc: true
+toc_sticky: true
+ 
+date: 2023-04-27 15:57:45
+last_modified_at: 2023-04-27 15:57:48
+---
+
+사용 언어: Python3
+
+## 문제
+![스크린샷 2023-04-27 오후 3 04 46](https://user-images.githubusercontent.com/59405576/234773501-4f3974c6-7683-4dca-8469-1474a494a0d3.png)
+
+## 풀이
+### 내 풀이 - 큐 이용
+```py
+from collections import deque
+N = int(input())
+lst = [input() for _ in range(N)] # 미리 적어놓은 것
+used = [input() for _ in range(N-1)] # 시에 쓰인 것
+
+q = deque(lst)
+while len(q) != 1:
+    cur = q.popleft()
+    if not cur in used: # 쓰이지 않았다면 q 맨 뒤로 붙이기
+        q.append(cur)
+    
+print(q[0])
+```
+
+
+
+### 다른 풀이 - 딕셔너리 이용
+```py
+N = int(input())
+pre = [input() for _ in range(N)] # 미리 적어놓은 것
+used = [input() for _ in range(N-1)] # 시에 쓰인 것
+
+dic = {x:0 for x in pre}
+
+for x in used:
+    dic[x] = 1
+
+for k,v in dic.items():
+    if v == 0:
+        print(k)
+```
+
+### 다른 풀이 - 딕셔너리 이용
+```py
+N = int(input())
+dic = dict()
+
+for _ in range(N):
+    dic[input()] = 0 # ✅ 미리 적어둔 단어들 0으로 초기화
+
+for _ in range(N-1):
+    dic[input()] = 1 # ✅ 쓰였다면 1로 변경
+
+for k, v in dic.items():
+    if v == 0:
+        print(k)
+        break
+```
+- 0으로 초기화 한 뒤 쓰인 단어만 1으로 변경
+    - 마지막까지 0인 단어는 쓰이지 않은 단어이다.
+
+
+
+
+
+
+
+
+***
+<br>
+
+
+    💛 개인 공부 기록용 블로그입니다. 👻
+
+[맨 위로 이동하기](#){: .btn .btn--primary }{: .align-right}
