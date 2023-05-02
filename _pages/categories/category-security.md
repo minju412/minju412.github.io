@@ -1,5 +1,5 @@
 ---
-title: "Security"
+title: "보안"
 layout: archive
 permalink: categories/security
 author_profile: true
