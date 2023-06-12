@@ -78,6 +78,13 @@
             <span class="nav__sub-title">CS</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "CS50" %}
+                <li><a href="/categories/cs50" class="">CS50 ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "DataStructure" %}
                 <li><a href="/categories/datastructure" class="">Data Structure ({{category[1].size}})</a></li>
                 {% endif %}
