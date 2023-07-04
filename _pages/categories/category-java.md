@@ -1,7 +1,7 @@
 ---
-title: "About Me"
+title: "Java"
 layout: archive
-permalink: categories/aboutme
+permalink: categories/java
 author_profile: true
 sidebar_main: true
 ---
