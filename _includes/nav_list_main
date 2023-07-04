@@ -166,13 +166,6 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                {% if category[0] == "S3" %}
-                <li><a href="/categories/s3" class="">S3 ({{category[1].size}})</a></li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
                 {% if category[0] == "Docker" %}
                 <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
                 {% endif %}
