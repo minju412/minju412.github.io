@@ -16,6 +16,13 @@
             <span class="nav__sub-title">Me</span>
             <ul>
                 {% for category in site.categories %}
+                {% if category[0] == "CodeReview" %}
+                <li><a href="/categories/codereview" class="">Code Review ({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                 {% if category[0] == "Devlog" %}
                 <li><a href="/categories/devlog" class="">Devlog ({{category[1].size}})</a></li>
                 {% endif %}
